@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block header %}
+  <h1>Randominator</h1>
+{% end %}
+
+{% block content %}
+<p>How random can you be in 10 characters?</p>
+<form method="POST" action="">
+    <div><input type="text" maxlength="10" id="bits" name="bits" /></div>
+    <div><input type="submit" id="submit" name="submit" value="Submit"/></div>
+</form>
+<p>You're ~{{ randomness }} % random!</p>
+{% end %}
+
+{% block footer %}
+
+{% end %}
